@@ -18,3 +18,27 @@ The Library Management System (LMS) is a modular, command-line software solution
 * **Testing Framework**: Python standard `unittest` 
 * **User Interface**: Pure Command-Line Interface (CLI / Headless)
 * **Version Control**: Git & GitHub
+
+
+## Repository Structure[cite: 2]
+```text
+library-management-system/
+├── README.md               # Setup instructions, features, and documentation[cite: 2]
+├── statement.md            # Problem statement, scope, and target audience[cite: 2]
+├── requirements.txt        # Required Python packages[cite: 2]
+├── database.sql            # Schema definitions and initial 50-book dataset[cite: 3]
+├── main.py                 # CLI interface and main application execution loop[cite: 3]
+│
+├── database/
+│   ├── __init__.py         # Package identifier[cite: 2]
+│   └── connection.py       # MySQL database connection handler[cite: 3]
+│
+├── models/
+│   ├── __init__.py         # Package identifier[cite: 2]
+│   ├── book.py             # Catalog querying and availability toggling[cite: 3]
+│   ├── membership.py       # Membership tiers, perks, and upgrades[cite: 3]
+│   └── borrower.py         # Book checkout, check-in, and fine processing[cite: 3]
+│
+└── tests/
+    ├── __init__.py         # Package identifier[cite: 2]
+    └── test_library.py     # Automated unit test suite[cite: 2, 10]
